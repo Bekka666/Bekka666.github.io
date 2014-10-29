@@ -21,7 +21,7 @@ html{
 
 html, body{
 	font-family: Arial, sans-serif;
-	color: #FFF;
+	color: #000;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -64,7 +64,12 @@ html, body{
 /* Headers -------------------------------------------------------- */
 h2 {
 	font-size: 2.125em;
-	color: #FFF;
+	color: red;
+}
+
+h3 {
+	font-size: 1.5em;
+	color: blue;
 }
 
 /* Navigation -------------------------------------------------------------------------- */
@@ -203,6 +208,105 @@ h2 {
 	.nav-top a.active{
 		color: #F00;
 	}
+}
+
+/* Portfolio Section ----------------------------------------------------------------*/
+/*IMAGES LAYOUT*/
+.grid {
+	list-style:none;
+	overflow: hidden;
+	padding: 0.5em 0 0 0.5em;
+	max-width: 76em;
+	margin: 0 auto;
+}
+
+.grid li {
+	padding: 0 0.5em 0.5em 0;
+}
+		
+.grid li > img {
+	display:block;
+	max-width:100%;
+	padding: 1rem;
+	text-align: center;
+}
+
+		
+@media all and (min-width: 35em) {
+.grid li {
+	width: 50%;
+	float: left;
+}
+}
+		
+@media all and (min-width: 40em) {
+	.grid li {
+		width: 33%;
+	}
+	.grid li.wide {
+		width: 66%;
+	}
+}
+		
+@media all and (min-width: 60em) {
+	.grid li {
+		width: 25%;
+	}
+	.grid li.wide {
+		width: 50%;
+	}
+}
+
+.pictures,
+.placeholder,
+.placeholder-last{
+	margin: 0;
+	background-color: rgba(251,62,206,1.00);
+}
+
+@media only screen and (min-width: 25em){
+
+.pictures,
+.placeholder,
+.placeholder-last{
+	overflow:auto;
+}
+
+.pictures
+.placeholder,
+.placeholder-last{
+	width: 45%;
+	margin: 2.5%;
+	float: left;
+}
+}
+
+@media only screen and (min-width: 35em){
+
+.pictures,
+.placeholder,
+.placeholder-last{
+	overflow:auto;
+}
+
+.pictures
+.placeholder,
+.placeholder-last{
+	width: 45%;
+	margin: 2.5%;
+	float: left;
+}
+}
+
+
+@media only screen and (min-width: 50em){
+
+.pictures
+.placeholder,
+.placeholder-last{
+	width: 27.2%;
+	margin: 3%;
+}
 }
 
 /* Footer -------------------------------------------------------------------------- */
