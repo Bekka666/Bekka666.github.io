@@ -5,12 +5,14 @@ var $win = $(window);
 var navTop = document.querySelector('.nav-top');
 var $logo = $('.logo');
 var $headerSection = $('.header-section');
+var $portfolioSection = $('#portfolio');
 
 $win.on('scroll', function () {
 	var scrollPos = $win.scrollTop();
 
 	$logo.css('transform', 'rotate(' + scrollPos / 1 + 'deg)');
 	$headerSection.css('background-position', 'center ' + scrollPos / 1 + 'px');
+	$portfolioSection.css('margin-top', '-' + scrollPos / 5 + 'px');
 });
 
 $headerSection.waypoint(function () {
