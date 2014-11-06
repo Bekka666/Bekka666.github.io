@@ -85,7 +85,7 @@ h2 {
 h3 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
-	font-size: 1.5em;
+	font-size: 2.5em;
 	color: #fff;
 	text-align: center;
 	margin: 0;
@@ -192,8 +192,8 @@ h3 {
 }
 .about p{
 	float: right;
-	margin-top: 0;
-	margin-left: 50%;
+	margin: 0;
+	padding-left: 1.5rem;
 }
 .portfolio h2{
 	padding: 0 1.5rem;
@@ -443,21 +443,20 @@ h3 {
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 	border-radius: 50%;
-	-webkit-box-shadow: inset 0px 0px 0px 40px #87007A;
-	-moz-box-shadow: inset 0px 0px 0px 40px #87007A;
-	-ms-box-shadow: inset 0px 0px 0px 40px #87007A;
-	-o-box-shadow: inset 0px 0px 0px 40px #87007A;
-	box-shadow: inset 0px 0px 0px 40px #87007A;
+	-webkit-box-shadow: inset 0px 0px 0px 40px rgba(251,62,206,1.00);
+	-moz-box-shadow: inset 0px 0px 0px 40px rgba(251,62,206,1.00);
+	-ms-box-shadow: inset 0px 0px 0px 40px rgba(251,62,206,1.00);
+	-o-box-shadow: inset 0px 0px 0px 40px rgba(251,62,206,1.00);
+	box-shadow: inset 0px 0px 0px 40px rgba(251,62,206,1.00);
 	
 }
 
 .social li a:hover{
-	color: #E713BA;
-	-webkit-box-shadow: inset 0px 0px 0px 3px #E713BA;
-	-moz-box-shadow: inset 0px 0px 0px 3px #E713BA;
-	-ms-box-shadow: inset 0px 0px 0px 3px #E713BA;
-	-o-box-shadow: inset 0px 0px 0px 3px #E713BA;
-	box-shadow: inset 0px 0px 0px 3px #E713BA;
+	-webkit-box-shadow: inset 0px 0px 0px 3px #fff;
+	-moz-box-shadow: inset 0px 0px 0px 3px #fff;
+	-ms-box-shadow: inset 0px 0px 0px 3px #fff;
+	-o-box-shadow: inset 0px 0px 0px 3px #fff;
+	box-shadow: inset 0px 0px 0px 3px #fff;
 }
 .copyright{
 	color: #fff;
