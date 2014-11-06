@@ -48,7 +48,7 @@ html, body{
 
 /* Masthead -------------------------------------------------------- */
 .header-section {
-	background: transparent url(../images/mars-pano.jpg) no-repeat center top;
+	background: transparent url(../images/bg.jpg) no-repeat center top;
 	background-size: cover;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
@@ -62,7 +62,7 @@ html, body{
 	position: relative;
 }
 .js-logo-fade {
-	-webkit-animation: logo-fade 1s linear forwards;
+	-webkit-animation: logo-fade 750ms linear forwards;
 }
 @-webkit-keyframes logo-fade {
 	0% {
@@ -77,12 +77,19 @@ html, body{
 
 /* Headers -------------------------------------------------------- */
 h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 	font-size: 2.125em;
 	color: rgba(251,62,206,1.00);
 }
 h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
 	font-size: 1.5em;
-	color: blue;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	padding: .5rem;
 }
 
 /* Navigation -------------------------------------------------------------------------- */
@@ -141,7 +148,8 @@ h3 {
 	padding: .75rem;
 	border-top: 1px solid rgba(234,0,224,.5);
 	width: 100px;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 	font-size: 1rem;
 	font-weight: normal;
 }
@@ -168,18 +176,56 @@ h3 {
 .nav-top[data-state="expanded"]{
 	max-height: 15.25em;
 }
+.js-photo-slide {
+	-webkit-animation: photo-slide 1s linear forwards;
+}
+@-webkit-keyframes photo-slide {
+	0% {
+		right: -10px;
+	}
+	100% {
+		right: 0;
+	}
+}
 .about{
 	padding: 0 1.5em;
+}
+.about p{
+	float: right;
+	margin-top: 0;
+	margin-left: 50%;
 }
 .portfolio h2{
 	padding: 0 1.5rem;
 }
 #portfolio {
 	position: relative;
-	background-color: red;
+	background: rgba(234,0,224,.5) url("../images/bg.jpg") no-repeat center center;
+}
+.contact-section{
+	background: rgba(234,0,224,.5) url("../images/bg.jpg") no-repeat center center;
 }
 .contact{
+    padding: 1.5em;
+    position: relative;
+    cursor: pointer;
+}
+.contact-details{
+	margin: 0;
 	padding: 0 1.5rem;
+	position: absolute;
+	opacity: 100;
+	background-color: #fff;
+	transition: all 500ms ease;
+}
+.contact-details[data-state="active"] {
+	opacity: 100;
+}
+.contact-details::before {
+  top: -10px;
+  content: " ";
+  height: 0;
+  position: absolute;
 }
 @media only screen and (min-width: 35em){
 .nav{
@@ -277,7 +323,7 @@ h3 {
 .placeholder,
 .placeholder-last{
 	margin: 0;
-	background-color: rgba(251,62,206,1.00);
+	background-color: rgba(0,0,0,.5);
 }
 
 @media only screen and (min-width: 25em){
@@ -327,7 +373,7 @@ h3 {
 /* Footer -------------------------------------------------------------------------- */
 
 .footer{
-	background-color: rgba(251,62,206,1.00);
+	background-color: rgba(0,0,0,.5);
 	position:relative;
 }
 
@@ -336,7 +382,6 @@ h3 {
 
 .nav-bottom{
 	display: block;
-	padding-bottom: 1.5rem;
 	text-align: center;
 	margin: 0;
 }
@@ -354,7 +399,8 @@ h3 {
 .nav-bottom a:visited{
 	color: #fff;
 	text-decoration: none;
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 	font-size: 1rem;
 	font-weight: normal;
 }
@@ -363,12 +409,12 @@ h3 {
 .fancy-link:visited{
 	text-decoration: none;
 	font-weight: bold;
-	border-bottom: 0 solid #BFFF00;
+	border-bottom: 0 solid #FFF;
 }
 .fancy-link:hover,
 .fancy-link:active,
 .fancy-link:focus{
-	border-bottom: 3px solid #FFF;
+	border-bottom: 2.5px solid #FFF;
 }
 .social img {
 	width: 100%;
@@ -397,20 +443,26 @@ h3 {
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 	border-radius: 50%;
-	color: #fff;
-	-webkit-box-shadow: inset 0px 0px 0px 40px #8F0000;
-	-moz-box-shadow: inset 0px 0px 0px 40px #8F0000;
-	-ms-box-shadow: inset 0px 0px 0px 40px #8F0000;
-	-o-box-shadow: inset 0px 0px 0px 40px #8F0000;
-	box-shadow: inset 0px 0px 0px 40px #8F0000;
+	-webkit-box-shadow: inset 0px 0px 0px 40px #87007A;
+	-moz-box-shadow: inset 0px 0px 0px 40px #87007A;
+	-ms-box-shadow: inset 0px 0px 0px 40px #87007A;
+	-o-box-shadow: inset 0px 0px 0px 40px #87007A;
+	box-shadow: inset 0px 0px 0px 40px #87007A;
 	
 }
 
 .social li a:hover{
-	color: #FA0D3B;
-	-webkit-box-shadow: inset 0px 0px 0px 3px #FA0D3B;
-	-moz-box-shadow: inset 0px 0px 0px 3px #FA0D3B;
-	-ms-box-shadow: inset 0px 0px 0px 3px #FA0D3B;
-	-o-box-shadow: inset 0px 0px 0px 3px #FA0D3B;
-	box-shadow: inset 0px 0px 0px 3px #FA0D3B;
+	color: #E713BA;
+	-webkit-box-shadow: inset 0px 0px 0px 3px #E713BA;
+	-moz-box-shadow: inset 0px 0px 0px 3px #E713BA;
+	-ms-box-shadow: inset 0px 0px 0px 3px #E713BA;
+	-o-box-shadow: inset 0px 0px 0px 3px #E713BA;
+	box-shadow: inset 0px 0px 0px 3px #E713BA;
+}
+.copyright{
+	color: #fff;
+	font-size: .5rem;
+	text-align: center;
+	margin: 0;
+	padding-bottom: 1rem;
 }
