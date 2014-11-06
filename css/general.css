@@ -58,13 +58,13 @@ html, body{
 .logo {
 	margin: 1.5em auto;
 	display: block;
-	width: 200px;
+	width: 150px;
 }
 
 /* Headers -------------------------------------------------------- */
 h2 {
 	font-size: 2.125em;
-	color: red;
+	color: rgba(251,62,206,1.00);
 }
 
 h3 {
@@ -160,54 +160,45 @@ h3 {
 }
 
 @media only screen and (min-width: 35em){
-	.nav{
+.nav{
 		width: auto;
 		height: inherit;
 	}
-	
-	.nav li{
-		display: inline-block;
+.nav li{
+	display: inline-block;
 		
-	}
-	
-	.nav-btn,
-	.nav-btn:link,
-	.nav-btn:visited{
-		display: none;
-	}
-
-	
-	
-	.nav-top{
-		display: block;
-		max-height: 10rem;
-		background-color: transparent;
-		margin: 0 5%;
-		float: none;
-		text-align: center;
-	}
-	
-	.nav-top a,
-	.nav-top a:link,
-	.nav-top a:visited{
-		border-top:0;
-	}
-	
-	.nav-top ul{
-		width: auto;
-		margin: 0 auto;
-	}
-	
-	.nav-bottom{
-		display: none;
-	}
-	
-	.nav-top a:hover,
-	.nav-top a:focus,
-	.nav-top a:active, 
-	.nav-top a.active{
-		color: #F00;
-	}
+}
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited{
+	display: none;
+}
+.nav-top{
+	display: block;
+	max-height: 10rem;
+	background-color: transparent;
+	margin: 0 5%;
+	float: none;
+	text-align: center;
+}
+.nav-top a,
+.nav-top a:link,
+.nav-top a:visited{
+	border-top:0;
+}
+.nav-top ul{
+	width: auto;
+	margin: 0 auto;
+}
+.nav-bottom{
+	display: none;
+}	
+.nav-top a:hover,
+.nav-top a:focus,
+.nav-top a:active, 
+.nav-top a.active{
+	color: #F00;
+}
 }
 
 /* Portfolio Section ----------------------------------------------------------------*/
@@ -215,24 +206,24 @@ h3 {
 .grid {
 	list-style:none;
 	overflow: hidden;
-	padding: 0.5em 0 0 0.5em;
+	padding: 1em;
 	max-width: 76em;
 	margin: 0 auto;
 }
 
 .grid li {
-	padding: 0 0.5em 0.5em 0;
+	padding: 1em;
 }
 		
 .grid li > img {
 	display:block;
 	max-width:100%;
-	padding: 1rem;
+	padding: 1em;
 	text-align: center;
 }
 
 		
-@media all and (min-width: 35em) {
+@media all and (min-width: 25em) {
 .grid li {
 	width: 50%;
 	float: left;
@@ -246,6 +237,7 @@ h3 {
 	.grid li.wide {
 		width: 66%;
 	}
+
 }
 		
 @media all and (min-width: 60em) {
@@ -281,14 +273,13 @@ h3 {
 }
 }
 
-@media only screen and (min-width: 35em){
+@media only screen and (min-width: 40em){
 
 .pictures,
 .placeholder,
 .placeholder-last{
 	overflow:auto;
 }
-
 .pictures
 .placeholder,
 .placeholder-last{
@@ -299,7 +290,7 @@ h3 {
 }
 
 
-@media only screen and (min-width: 50em){
+@media only screen and (min-width: 60em){
 
 .pictures
 .placeholder,
@@ -313,9 +304,7 @@ h3 {
 
 .footer{
 	background-color: rgba(251,62,206,1.00);
-	clear: both;
 	position:relative;
-	z-index: 100;
 }
 
 
@@ -329,7 +318,7 @@ h3 {
 .nav-bottom li{
 	display:inline-block;
 	text-align: center;
-	margin: 1rem 1.5rem 1rem 0;
+	margin: 1rem;
 }
 
 .nav-bottom a,
@@ -349,8 +338,7 @@ h3 {
 
 .social{
 	position:relative;
-	
-	background-color: rgba(0,0,0,.7);
+	background-color: red;
 	margin: 0 5%;
 
 }
@@ -360,10 +348,9 @@ h3 {
 
 .social li{
 	display: inline-block;
-	margin-left: 1rem;
 	position: relative;
 }
 
 .social li:hover{
-	background-color: red;
+	background-color: blue;
 }
