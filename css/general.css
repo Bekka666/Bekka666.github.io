@@ -8,7 +8,6 @@
 @-webkit-viewport { width: device-width; scale: 1;}
 @-o-viewport { width: device-width; scale: 1;}
 @viewport { width: device-width; scale: 1;}
-
 html{
 	-moz-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -43,7 +42,6 @@ html, body{
 		max-width: 300px;
 	}
  }
-
 .main{
 	margin: 0 auto;
 }
@@ -55,11 +53,22 @@ html, body{
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 }
-
 .logo {
 	margin: 0 auto 1.5em;
 	display: block;
 	width: 150px;
+	opacity: 0;
+}
+.js-logo-fade {
+	-webkit-animation: logo-fade 1s linear forwards;
+}
+@-webkit-keyframes logo-fade {
+	0% {
+		opacity: 0; top: 1rem;
+	}
+	100% {
+		opacity: 1; top: 0;
+	}
 }
 
 /* Headers -------------------------------------------------------- */
@@ -67,7 +76,6 @@ h2 {
 	font-size: 2.125em;
 	color: rgba(251,62,206,1.00);
 }
-
 h3 {
 	font-size: 1.5em;
 	color: blue;
@@ -80,11 +88,9 @@ h3 {
 	overflow: hidden;
 	display: block;
 }
-
 .relative{
 	position: relative;
 }
-
 .expand:hover{
 	-webkit-transform: scale(1.5, 1.5);
 	-moz-transform: scale(1.5, 1.5);
@@ -92,7 +98,6 @@ h3 {
 	-o-transform: scale(1.5, 1.5);
 	transform: scale(1.5, 1.5);
 }
-
 .ease-all{
 	-webkit-transition: all 350ms ease-in-out;
 	-moz-transition: all 350ms ease-in-out;
@@ -111,11 +116,10 @@ h3 {
 	top: 1.5rem;
 	right: 5%;
 }
-
 .nav-btn:hover,
 .nav-btn:focus,
 .nav-btn:active{
-	background-color:rgba(234,0,224,.75);
+	background-color:rgba(234,0,224,.5);
 }
 .nav-top ul{
 	list-style-type: none;
@@ -137,7 +141,6 @@ h3 {
 	font-size: 1rem;
 	font-weight: normal;
 }
-
 .nav-top a:hover,
 .nav-top a:focus,
 .nav-top a:active{
@@ -158,26 +161,22 @@ h3 {
 	transition: all 250ms linear;
 	overflow: hidden;
 }
-
 .nav-top[data-state="expanded"]{
 	max-height: 15.25em;
 }
-
 .about{
 	padding: 0 1.5em;
 }
-
 .portfolio h2{
 	padding: 0 1.5rem;
 }
-
 .contact{
 	padding: 0 1.5rem;
 }
 @media only screen and (min-width: 35em){
 .nav{
-		width: auto;
-		height: inherit;
+	width: auto;
+	height: inherit;
 	}
 .nav li{
 	display: inline-block;
@@ -214,7 +213,7 @@ h3 {
 .nav-top a:focus,
 .nav-top a:active, 
 .nav-top a.active{
-	color: rgba(234,0,224,.5);
+	color: rgba(234,0,224,.7);
 }
 }
 
