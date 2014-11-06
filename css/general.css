@@ -45,7 +45,6 @@ html, body{
  }
 
 .main{
-	width: 90%;
 	margin: 0 auto;
 }
 
@@ -53,10 +52,12 @@ html, body{
 .header-section {
 	background: transparent url(../images/mars-pano.jpg) no-repeat center top;
 	background-size: cover;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
 }
 
 .logo {
-	margin: 1.5em auto;
+	margin: 0 auto 1.5em;
 	display: block;
 	width: 150px;
 }
@@ -99,7 +100,6 @@ h3 {
 	-o-transition: all 350ms ease-in-out;
 	transition: all 350ms ease-in-out;
 }
-
 .nav-btn,
 .nav-btn:link,
 .nav-btn:visited{
@@ -117,7 +117,11 @@ h3 {
 .nav-btn:active{
 	background-color:#333;
 }
-
+.nav-top ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
 .nav-top a,
 .nav-top a:link,
 .nav-top a:visited{
@@ -159,6 +163,17 @@ h3 {
 	max-height: 15.25em;
 }
 
+.about{
+	padding: 0 1.5em;
+}
+
+.portfolio h2{
+	padding: 0 1.5rem;
+}
+
+.contact{
+	padding: 0 1.5rem;
+}
 @media only screen and (min-width: 35em){
 .nav{
 		width: auto;
@@ -332,23 +347,22 @@ h3 {
 }
 
 .social img {
-	margin: 0 auto;
+	width: 100%;
 	display: block;
 }
 
 .social{
-	position:relative;
 	background-color: red;
-	margin: 0 5%;
-
 }
 .social ul{
-	position: absolute;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 .social li{
 	display: inline-block;
-	position: relative;
+	width: 64px;
 }
 
 .social li:hover{
