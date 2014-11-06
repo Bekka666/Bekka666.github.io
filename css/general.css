@@ -115,7 +115,7 @@ h3 {
 .nav-btn:hover,
 .nav-btn:focus,
 .nav-btn:active{
-	background-color:#333;
+	background-color:rgba(234,0,224,.75);
 }
 .nav-top ul{
 	list-style-type: none;
@@ -131,7 +131,7 @@ h3 {
 	color: #fff;
 	text-decoration: none;
 	padding: .75rem;
-	border-top: 1px solid #666;
+	border-top: 1px solid rgba(234,0,224,.5);
 	width: 100px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 1rem;
@@ -141,15 +141,15 @@ h3 {
 .nav-top a:hover,
 .nav-top a:focus,
 .nav-top a:active{
-	background-color: #333;
+	background-color: rgba(234,0,224,.75);
 }
 
 /* Toggle nav css*/
 
 .nav-top{
-	float: right;
-	margin-right: 5%;
-	margin-bottom: 2rem;
+	position: absolute;
+	right: 1.5rem;
+	top: 4rem;
 	max-height: 0px;
 	-moz-transition: all 250ms linear;
 	-ms-transition: all 250ms linear;
@@ -195,11 +195,13 @@ h3 {
 	margin: 0 5%;
 	float: none;
 	text-align: center;
+	position: static;
 }
 .nav-top a,
 .nav-top a:link,
 .nav-top a:visited{
 	border-top:0;
+	background-color: transparent;
 }
 .nav-top ul{
 	width: auto;
@@ -212,7 +214,7 @@ h3 {
 .nav-top a:focus,
 .nav-top a:active, 
 .nav-top a.active{
-	color: #F00;
+	color: rgba(234,0,224,.5);
 }
 }
 
@@ -327,15 +329,19 @@ h3 {
 
 .nav-bottom{
 	display: block;
-	padding-bottom: 3rem;
+	padding-bottom: 1.5rem;
+	text-align: center;
+	margin: 0;
 }
-
+.nav-bottom ul{
+	width: auto;
+	margin: 0 auto;
+	padding: 0;
+}
 .nav-bottom li{
 	display:inline-block;
-	text-align: center;
 	margin: 1rem;
 }
-
 .nav-bottom a,
 .nav-bottom a:link,
 .nav-bottom a:visited{
@@ -345,26 +351,24 @@ h3 {
 	font-size: 1rem;
 	font-weight: normal;
 }
-
 .social img {
 	width: 100%;
 	display: block;
 }
-
 .social{
-	background-color: red;
+	background-color: transparent;
+	text-align: center;
+	padding-top: 1.5rem;
 }
 .social ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
-
 .social li{
 	display: inline-block;
 	width: 64px;
 }
-
 .social li:hover{
-	background-color: blue;
+	background-color: purple;
 }
