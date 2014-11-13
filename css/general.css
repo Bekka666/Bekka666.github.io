@@ -192,8 +192,8 @@ h3 {
 }
 .about p{
 	float: right;
-	margin: 0;
-	padding-left: 1.5rem;
+	margin-top: 0;
+	margin-left: 50%;
 }
 .portfolio h2{
 	padding: 0 1.5rem;
