@@ -181,26 +181,31 @@ h3 {
 }
 @-webkit-keyframes photo-slide {
 	0% {
-		right: -10px;
+		left: -200px;
 	}
 	100% {
-		right: 0;
+		left: 0;
 	}
 }
 .about{
 	padding: 0 1.5em;
+	overflow: hidden;
+	padding-bottom: 1.5rem;
 }
 .about p{
 	float: right;
 	margin-top: 0;
-	margin-left: 50%;
+	width: 45%;
+}
+.photo{
+	float: left;
+	position: relative;
 }
 .portfolio h2{
 	padding: 0 1.5rem;
 }
 #portfolio {
-	position: relative;
-	background: rgba(234,0,224,.5) url("../images/bg.jpg") no-repeat center center;
+	background: rgba(234,0,224,.5);
 }
 .contact-section{
 	background: rgba(234,0,224,.5) url("../images/bg.jpg") no-repeat center center;
@@ -209,20 +214,22 @@ h3 {
     padding: 1.5em;
     position: relative;
     cursor: pointer;
+	background-color: red;
+
 }
 .contact-details{
 	margin: 0;
-	padding: 0 1.5rem;
-	position: absolute;
-	opacity: 100;
+	padding: 0;
+	opacity: 0;
 	background-color: #fff;
 	transition: all 500ms ease;
+	max-height: 0;
 }
 .contact-details[data-state="active"] {
-	opacity: 100;
+	opacity: 1;
+	max-height: 10em;
 }
 .contact-details::before {
-  top: -10px;
   content: " ";
   height: 0;
   position: absolute;
@@ -273,68 +280,27 @@ h3 {
 
 /* Portfolio Section ----------------------------------------------------------------*/
 /*IMAGES LAYOUT*/
-.grid {
-	list-style:none;
-	overflow: hidden;
-	padding: 1em;
-	max-width: 76em;
-	margin: 0 auto;
-}
-
-.grid li {
-	padding: 1em;
-}
-		
-.grid li > img {
-	display:block;
-	max-width:100%;
-	padding: 1em;
-	text-align: center;
-}
-
-		
-@media all and (min-width: 25em) {
-.grid li {
-	width: 50%;
-	float: left;
-}
-}
-		
-@media all and (min-width: 40em) {
-	.grid li {
-		width: 33%;
-	}
-	.grid li.wide {
-		width: 66%;
-	}
-
-}
-		
-@media all and (min-width: 60em) {
-	.grid li {
-		width: 25%;
-	}
-	.grid li.wide {
-		width: 50%;
-	}
-}
-
 .pictures,
 .placeholder,
 .placeholder-last{
 	margin: 0;
-	background-color: rgba(0,0,0,.5);
+}
+
+.portfolio,
+.pictures {
+	position: relative;
+}
+
+.pictures img{
+	width: 100%;
 }
 
 @media only screen and (min-width: 25em){
 
-.pictures,
-.placeholder,
-.placeholder-last{
-	overflow:auto;
+.pictures {
+	overflow:hidden;
 }
 
-.pictures
 .placeholder,
 .placeholder-last{
 	width: 45%;
@@ -345,12 +311,10 @@ h3 {
 
 @media only screen and (min-width: 40em){
 
-.pictures,
-.placeholder,
-.placeholder-last{
-	overflow:auto;
+.pictures {
+	overflow:hidden;
 }
-.pictures
+
 .placeholder,
 .placeholder-last{
 	width: 45%;
@@ -375,6 +339,7 @@ h3 {
 .footer{
 	background-color: rgba(0,0,0,.5);
 	position:relative;
+	xoverflow: hidden;
 }
 
 

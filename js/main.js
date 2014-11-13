@@ -5,7 +5,6 @@ var $win = $(window);
 var navTop = document.querySelector('.nav-top');
 var $logo = $('.logo');
 var $headerSection = $('.header-section');
-var $portfolioSection = $('#portfolio');
 var contact = $('.contact');
 var contactDetails = $('.contact-details');
 var $photo = $('.photo');
@@ -16,7 +15,6 @@ $win.on('scroll', function () {
 
 	$logo.css('transform', 'rotate(' + scrollPos / 1 + 'deg)');
 	$headerSection.css('background-position', 'center ' + scrollPos / 1 + 'px');
-	$portfolioSection.css('margin-top', '-' + scrollPos / .8 + 'px');
 });
 
 $headerSection.waypoint(function () {
@@ -51,3 +49,5 @@ if (currentState == 'active') {
 	contactDetails.attr('data-state', 'active');
 }
 };
+
+contact.on('click', buttonClickHandler);
