@@ -217,15 +217,18 @@ h3 {
     position: relative;
     cursor: pointer;
 	background-color: red;
-
+}
+.contact h3:hover{
+	background-color: black;
 }
 .contact-details{
 	margin: 0;
 	padding: 0;
 	opacity: 0;
-	background-color: #fff;
+	background-color: transparent;
 	transition: all 500ms ease;
 	max-height: 0;
+	text-align: center;
 }
 .contact-details[data-state="active"] {
 	opacity: 1;
@@ -278,6 +281,12 @@ h3 {
 .nav-top a.active{
 	color: rgba(234,0,224,.7);
 }
+.about p{
+	float: right;
+	margin-top: 0;
+	width: 45%;
+	padding-right: 6rem;
+}
 }
 
 /* Portfolio Section ----------------------------------------------------------------*/
@@ -308,6 +317,13 @@ h3 {
 	width: 45%;
 	margin: 2.5%;
 	float: left;
+}
+.about p{
+	float: right;
+	margin-top: 0;
+	width: 45%;
+	padding-right: 6rem;
+	padding-top: 1.5rem;
 }
 }
 
