@@ -33,7 +33,7 @@ html, body{
 
 /* Masthead -------------------------------------------------------- */
 .header-section {
-	background: transparent url(../images/bg.jpg) no-repeat center top;
+	background: black;
 	background-size: cover;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
@@ -63,9 +63,9 @@ html, body{
 /* Headers -------------------------------------------------------- */
 h2 {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 2.125em;
-	color: rgba(251,62,206,1.00);
+	color: #fff;
 }
 h3 {
 	font-family: 'Roboto', sans-serif;
@@ -177,6 +177,9 @@ h3 {
 	overflow: hidden;
 	padding-bottom: 1.5rem;
 }
+.about h2{
+	color: #000;
+}
 .about p{
 	float: right;
 	margin-top: 0;
@@ -189,22 +192,23 @@ h3 {
 	padding-left: 6rem;
 }
 .portfolio h2{
-	padding: 0 1.5rem;
+	padding: 1.5rem;
 }
 #portfolio {
-	background: rgba(234,0,224,.5);
+	background: rgba(0,0,0,.8);
 }
 .contact-section{
-	background: rgba(234,0,224,.5) url("../images/bg.jpg") no-repeat center center;
+	background: rgba(234,0,224,.5);
 }
 .contact{
-    padding: 1.5em;
+    padding-top: 1.5em;
+	margin: 0;
     position: relative;
     cursor: pointer;
-	background-color: red;
+	background-color: black;
 }
 .contact h3:hover{
-	background-color: black;
+	color: #00F3FF;
 }
 .contact-details{
 	margin: 0;
@@ -214,10 +218,12 @@ h3 {
 	transition: all 500ms ease;
 	max-height: 0;
 	text-align: center;
+	color: #fff;
 }
 .contact-details[data-state="active"] {
 	opacity: 1;
 	max-height: 10em;
+	padding-bottom: 1rem;
 }
 .contact-details::before {
   content: " ";
@@ -264,7 +270,7 @@ h3 {
 .nav-top a:focus,
 .nav-top a:active, 
 .nav-top a.active{
-	color: rgba(234,0,224,.7);
+	color: #00F3FF;
 }
 .about p{
 	float: right;
@@ -377,12 +383,12 @@ h3 {
 .fancy-link:visited{
 	text-decoration: none;
 	font-weight: bold;
-	border-bottom: 0 solid #FFF;
+	border-bottom: 0 solid #00F3FF;
 }
 .fancy-link:hover,
 .fancy-link:active,
 .fancy-link:focus{
-	border-bottom: 2.5px solid #FFF;
+	border-bottom: 2.5px solid #00F3FF;
 }
 .social img {
 	width: 100%;
@@ -411,20 +417,20 @@ h3 {
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 	border-radius: 50%;
-	-webkit-box-shadow: inset 0px 0px 0px 40px rgba(251,62,206,1.00);
-	-moz-box-shadow: inset 0px 0px 0px 40px rgba(251,62,206,1.00);
-	-ms-box-shadow: inset 0px 0px 0px 40px rgba(251,62,206,1.00);
-	-o-box-shadow: inset 0px 0px 0px 40px rgba(251,62,206,1.00);
-	box-shadow: inset 0px 0px 0px 40px rgba(251,62,206,1.00);
+	-webkit-box-shadow: inset 0px 0px 0px 40px #000;
+	-moz-box-shadow: inset 0px 0px 0px 40px #000;
+	-ms-box-shadow: inset 0px 0px 0px 40px #000;
+	-o-box-shadow: inset 0px 0px 0px 40px #000;
+	box-shadow: inset 0px 0px 0px 40px #000;
 	
 }
 
 .social li a:hover{
-	-webkit-box-shadow: inset 0px 0px 0px 3px #fff;
-	-moz-box-shadow: inset 0px 0px 0px 3px #fff;
-	-ms-box-shadow: inset 0px 0px 0px 3px #fff;
-	-o-box-shadow: inset 0px 0px 0px 3px #fff;
-	box-shadow: inset 0px 0px 0px 3px #fff;
+	-webkit-box-shadow: inset 0px 0px 0px 3px #00F3FF;
+	-moz-box-shadow: inset 0px 0px 0px 3px #00F3FF;
+	-ms-box-shadow: inset 0px 0px 0px 3px #00F3FF;
+	-o-box-shadow: inset 0px 0px 0px 3px #00F3FF;
+	box-shadow: inset 0px 0px 0px 3px #00F3FF;
 }
 .copyright{
 	color: #fff;
