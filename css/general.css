@@ -408,6 +408,7 @@ h3 {
 
 .social li a {
 	width: 35px;
+	height: 100%;
 	display: block;
 	padding: .5rem;
 	-webkit-border-radius: 50%;
