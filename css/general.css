@@ -32,7 +32,7 @@ html, body{
 
 /* Masthead -------------------------------------------------------- */
 .header-section {
-	background: black;
+	background: url(../images/blackpattern.png) no-repeat center;
 	background-size: cover;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
@@ -194,7 +194,7 @@ h3 {
 	padding: 1.5rem;
 }
 #portfolio {
-	background: rgba(0,0,0,.8);
+	background: rgba(0,0,0,.7);
 }
 .contact-section{
 	background: rgba(234,0,224,.5);
@@ -345,7 +345,7 @@ h3 {
 /* Footer -------------------------------------------------------------------------- */
 
 .footer{
-	background-color: rgba(0,0,0,.5);
+	background: url(../images/blackpattern.png) no-repeat center;
 	position:relative;
 }
 
