@@ -229,7 +229,7 @@ h3 {
   height: 0;
   position: absolute;
 }
-@media only screen and (min-width: 35em){
+@media only screen and (min-width: 25em){
 .nav{
 	width: auto;
 	height: inherit;
