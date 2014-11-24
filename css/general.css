@@ -345,7 +345,7 @@ h3 {
 /* Footer -------------------------------------------------------------------------- */
 
 .footer{
-	background: url(../images/blackpattern.png) no-repeat center;
+	background: url(../images/blackpattern.png) no-repeat center center;
 	position:relative;
 	margin: 0;
 	padding: 0;
