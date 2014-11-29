@@ -286,6 +286,7 @@ h3 {
 .about p{
 	float: right;
 	padding-right: 6rem;
+	padding-top: 1.5rem;
 }
 .photo{
 	float: left;
