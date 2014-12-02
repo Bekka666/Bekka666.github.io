@@ -33,8 +33,7 @@ html, body{
 
 /* Masthead -------------------------------------------------------- */
 .header-section {
-	background: url(../images/blackpattern.png) no-repeat center;
-	background-size: cover;
+	background: url(../images/blackpattern.png);
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 }
@@ -189,6 +188,11 @@ h3 {
 }
 .bilboard{
 	text-align: center;
+	opacity: 0.7;
+}
+.bilboard:hover{
+	text-align: center;
+	opacity: 1;
 }
 .portfolio h2{
 	padding-left: 1.5rem;
@@ -301,6 +305,12 @@ h3 {
 
 .pictures img{
 	width: 100%;
+	opacity: 0.7;
+}
+
+.pictures img:hover{
+	width: 100%;
+	opacity: 1;
 }
 
 @media only screen and (min-width: 25em){
@@ -345,8 +355,8 @@ h3 {
 /* Footer -------------------------------------------------------------------------- */
 
 .footer{
-	background: url(../images/blackpattern.png) no-repeat center center;
-	background-size: cover;
+	background: url(../images/blackpattern.png);
+	background-color: #000;
 	position:relative;
 	margin: 0;
 	padding: 0;
