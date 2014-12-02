@@ -20,7 +20,7 @@ html{
 
 html, body{
 	font-family: Arial, sans-serif;
-	color: #FFF;
+	color: #000;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -176,24 +176,23 @@ h3 {
 	padding: 0 1.5em;
 	overflow: hidden;
 	padding-bottom: 1.5rem;
+	background: url(../images/me.png) no-repeat center center;
+	background-size: cover;
 }
 .about h2{
 	color: #000;
 }
 .about p{
 	margin: 0 auto;
-	width: 45%;
-}
-.photo{
-	position: relative;
-	display: block;
-	margin: 0 auto;
+	text-align: center;
+	max-width: 20rem;
 }
 .bilboard{
 	text-align: center;
 }
 .portfolio h2{
-	padding: 1.5rem;
+	padding-left: 1.5rem;
+	padding-top: 1.5rem;
 }
 #portfolio {
 	background: #202020;
@@ -285,15 +284,6 @@ h3 {
 .nav-top a.active{
 	color: #00F3FF;
 }
-.about p{
-	float: right;
-	padding-right: 6rem;
-	padding-top: 1.5rem;
-}
-.photo{
-	float: left;
-	padding-left: 6rem;
-}
 }
 
 /* Portfolio Section ----------------------------------------------------------------*/
@@ -324,13 +314,6 @@ h3 {
 	width: 45%;
 	margin: 2.5%;
 	float: left;
-}
-.about p{
-	float: right;
-	margin-top: 0;
-	width: 45%;
-	padding-right: 6rem;
-	padding-top: 1.5rem;
 }
 }
 
