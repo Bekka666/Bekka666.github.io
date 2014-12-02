@@ -195,13 +195,13 @@ h3 {
 	padding-top: 1.5rem;
 }
 #portfolio {
-	background: #202020;
+	background: #000;
+	overflow: hidden;
 }
 .contact-section{
 	background: rgba(234,0,224,.5);
 }
 .contact{
-    padding-top: 1.5em;
 	margin: 0;
     position: relative;
     cursor: pointer;
