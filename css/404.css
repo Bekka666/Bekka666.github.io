@@ -61,14 +61,17 @@ h1 {
 	color: #00F3FF;
 	text-align: center;
 	margin: 0;
-	padding: .5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 h2 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-size: 2.125em;
-	color: #fff;
-	padding-top: 1.5rem;
+	color: #000;
+	padding-top: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 	margin: 0;
 }
 h3 {
@@ -78,35 +81,24 @@ h3 {
 	color: #00F3FF;
 	text-align: center;
 	margin: 0;
-	padding: .5rem;
+	padding-top: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
-
-/* Navigation -------------------------------------------------------------------------- */
-
+p {
+	color: #000;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.picture-section {
+	background: url(../images/cat.png) center;
+	background-size: cover;
+	overflow: hidden;
+	width: 1080px;
+	height: 450px;
+}
 .flex{
 	width: 100%;
 	display: block;
-	max-width: 720px;
 	margin: 0 auto;
 }
-@media only screen and (min-width: 35em){
-
-}
-
-
-@media only screen and (min-width: 25em){
-
-}
-
-@media only screen and (min-width: 35em){
-
-}
-
-
-@media only screen and (min-width: 60em){
-
-}
-
-/* Footer -------------------------------------------------------------------------- */
-
-/* Footer Nav -------------------------------------------------------------------------- */
